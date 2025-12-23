@@ -1,0 +1,71 @@
+Cara Menjalankan Project
+1. Clone Repository
+git clone https://github.com/Tesadiansaputri/nodejs-crud-restapi.git
+cd nodejs-crud-restapi
+
+2. Install Dependency
+npm install
+
+3. Konfigurasi Database
+Buat database dan tabel sesuai struktur:
+categories
+products
+
+4. Jalankan Server
+node app.js
+
+Server berjalan di:
+http://localhost:3000
+
+🔗 Endpoint API
+Categories
+POST /categories
+GET /categories
+GET /categories/:id
+PUT /categories/:id
+DELETE /categories/:id
+
+Products
+POST /products
+GET /products
+GET /products/:id
+PUT /products/:id
+DELETE /products/:id
+
+🧪 Pengujian API
+
+Pengujian API dilakukan menggunakan Postman.
+Hasil pengujian terdapat pada folder /screenshots.
+
+1. Create Category (POST /categories) 
+Menampilkan proses penambahan data kategori baru menggunakan metode POST dengan response JSON berhasil.
+![Create](./screenshots/postdatacategories.png)
+
+
+2. Get All Categories (GET /categories)
+Menampilkan seluruh data kategori yang tersimpan di database.
+![Create](./screenshots/getdatacategories.png)
+
+3. Update Category (PUT /categories/:id)
+Menampilkan proses pembaruan data kategori berdasarkan ID.
+![Create](./screenshots/putdatacategories.png)
+
+4. Delete Category (DELETE /categories/:id)
+Menampilkan proses penghapusan kategori berdasarkan ID.
+![Create](./screenshots/deletedatacategories.png)
+
+5. Create Product (POST /products)
+Menampilkan proses penambahan data produk baru yang terhubung dengan kategori.
+![Create](./screenshots/postdataproducts.png)
+
+6. Get All Products (GET /products)
+Menampilkan seluruh data produk beserta relasi kategori.
+![Create](./screenshots/getdataproducts.png)
+
+7. Update Product (PUT /products/:id)
+Menampilkan proses pembaruan data produk.
+![Create](./screenshots/putdataproducts.png)
+
+8. Delete Product (DELETE /products/:id)
+Menampilkan proses penghapusan data produk.
+![Create](./screenshots/deletedataproducts.png)
